@@ -59,5 +59,12 @@ div {text-align: center;}
         else document.addEventListener("DOMContentLoaded", fn);
       })();
     </script>
+    <p>The link above loads a Google Colab notebook which use DNA match data to solve for the ancestor composition of your genome in a way that is:
+       <ul>
+<li> Self-consistent. Segments from one ancestor may overlap with segments from another ancestor only if the two ancestors are on the same line. </li>
+<li> Maximally consistent with common ancestor matches. The solver assigns segments to ancestors in a way that it is 100% consistent with the maximum possible number of common ancestor matches. It is generally not possible to be consistent with all common ancestor matches, due to phasing errors, false positives, and DNA shared from multiple lines.  </li>
+<li> Supported by a large percentage of other match data. Ancestor segments from a match with an unknown common ancestor are used to expand the set of ancestor segments in a way that is self-consistent and fully consistent with known common ancestor matches.  </li>
+    </ul>
+      </p>
   </body>
 </html>
